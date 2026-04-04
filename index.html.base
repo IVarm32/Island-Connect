@@ -3,15 +3,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future of Caribbean Business | AI Automation Agency</title>
-    
+
     <!-- Fonts: Outfit (Headlines) & DM Sans (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;400;500;700&amp;family=Outfit:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
-    
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -36,7 +36,7 @@
         }
     </script>
 
-    
+
 
     <link rel="stylesheet" href="css/style.css">
   </head><body class="bg-obsidian text-slate-300 font-sans selection:bg-island-green selection:text-white antialiased overflow-x-hidden">    <!-- Desktop Navigation -->
@@ -93,7 +93,7 @@
         </div>
 
         <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            
+
             <!-- Left Content -->
             <div class="space-y-8 order-2 lg:order-1">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-metallic-gold/30 bg-metallic-gold/5 text-metallic-gold text-xs font-bold uppercase tracking-wider">
@@ -105,7 +105,7 @@
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-island-green to-metallic-gold">Island</span>
                     Economies
                 </h1>
-                
+
                 <p class="text-lg md:text-xl text-white/70 max-w-lg leading-relaxed">
                     The future of Caribbean real estate and tourism is autonomous. Deploy smart agents that book villas, qualify leads, and secure data 24/7.
                 </p>
@@ -136,10 +136,10 @@
                 <div class="relative w-full max-w-md aspect-square animate-float">
                     <!-- Glow behind -->
                     <div class="absolute inset-0 bg-island-green blur-[80px] opacity-20 rounded-full"></div>
-                    
+
                     <!-- 3D AI Mascot Image -->
                     <img src="assets/images/1769135244522_island_connect_ai_brand_photo_with_logo_11zon.png" alt="Futuristic digital globe representing AI automation for Caribbean real estate and tourism revenue growth - Island Connect AI" style="">
-                    
+
                     <!-- Floating Data Card 1 -->
                     <div class="absolute -left-4 top-1/4 glass-card p-4 rounded-xl z-20 animate-[float_4s_ease-in-out_1s_infinite] transition-all duration-700 opacity-100 translate-y-0">
                         <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-island-green/20 flex items-center justify-center text-island-green">
@@ -172,7 +172,7 @@
     <section class="border-y border-white/5 bg-obsidian-light py-8 overflow-hidden relative">
         <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-obsidian-light to-transparent z-10"></div>
         <div class="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-obsidian-light to-transparent z-10"></div>
-        
+
         <div class="scrolling-logos w-[200%] flex items-center gap-16 md:gap-32 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
             <!-- Simulated Logos -->
             <div class="flex items-center gap-2 text-xl font-display font-bold"><i class="bi bi-building"></i> VILLA CORP</div>
@@ -343,7 +343,7 @@
 
                     const getBotResponse = (input) => {
                         const lowerInput = input.toLowerCase();
-                        
+
                         // Jamaican Patois / Caribbean Real Estate Persona
                         if (lowerInput.includes('hello') || lowerInput.includes('hi') || lowerInput.includes('gwaan')) {
                             return "Wah gwaan! Welcome to Paradise Villas. How can I assist you with your island stay today?";
@@ -360,14 +360,14 @@
                         if (lowerInput.includes('beach') || lowerInput.includes('ocean') || lowerInput.includes('sea')) {
                             return "Bless up! Filtering for oceanfront access... We have some criss spots right pon the sand. Check out the Azure Horizon or the Palm Cove Estate.";
                         }
-                        
+
                         // Dynamic Web Search Simulation Response
                         return `I've searched the web for info on "${input}". <br><br>Here's what I found: This specifically matches our <strong>Royal Palm Collection</strong> in St. Ann. It features exactly the amenities you mentioned with top-rated security and private beach access. <br><br>Would you like me to email you the brochure?`;
                     };
 
                     const addMessage = (text, sender) => {
                         const messageDiv = document.createElement('div');
-                        
+
                         if (sender === 'user') {
                             messageDiv.className = 'flex gap-4 justify-end';
                             messageDiv.innerHTML = `
@@ -389,7 +389,7 @@
                                 </div>
                             `;
                         }
-                        
+
                         chatMessages.appendChild(messageDiv);
                         chatMessages.scrollTop = chatMessages.scrollHeight;
                     };
@@ -422,7 +422,7 @@
                         setTimeout(() => {
                             const loadingMsg = document.getElementById(searchId);
                             if(loadingMsg) loadingMsg.remove();
-                            
+
                             const response = getBotResponse(text);
                             addMessage(response, 'bot');
                         }, 2000);
@@ -469,7 +469,7 @@
                 <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" style="background-size: cover; background-position: center center; background-image: url(&quot;https://media.clicksites.ai/clicksites/uploads/6270/abstract_digital_technology_ba_f6cb11beae59f1ffcedea8937e7c9bbe.png&quot;);">
                 </div>
                 <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent opacity-80"></div>
-                
+
                 <div class="absolute bottom-8 left-8 right-8">
                     <div class="glass-card p-4 rounded-xl inline-block backdrop-blur-xl transition-all duration-700 opacity-100 translate-y-0 opacity-0 translate-y-10">
                         <div class="text-xs text-metallic-gold font-bold uppercase tracking-wider mb-1">Result</div>
@@ -543,7 +543,7 @@
                 <p class="text-white/70 text-lg mb-8">
                     Your data is your most valuable asset. We employ military-grade encryption and real-time threat detection to ensure your operations never stop.
                 </p>
-                
+
                 <div class="space-y-6">
                     <div class="flex gap-4">
                         <div class="w-12 h-12 rounded bg-metallic-gold/10 flex items-center justify-center text-metallic-gold flex-shrink-0 border border-metallic-gold/20">
@@ -575,7 +575,7 @@
                             <span class="w-2 h-2 bg-island-green rounded-full"></span> Operational
                         </div>
                     </div>
-                    
+
                     <div class="space-y-4 font-mono text-xs">
                         <div class="flex justify-between text-slate-400">
                             <span>Threat Monitor</span>
@@ -584,7 +584,7 @@
                         <div class="h-1 w-full bg-slate-800 rounded-full overflow-hidden">
                             <div class="h-full w-1/3 bg-island-green animate-pulse"></div>
                         </div>
-                        
+
                         <div class="flex justify-between text-slate-400 pt-2">
                             <span>Firewall</span>
                             <span>Secure</span>
@@ -622,7 +622,7 @@
 
             <!-- Fan Cards Container -->
             <div class="group relative flex flex-col md:h-[450px] md:block w-full [perspective:1000px] gap-6 md:gap-0 items-center">
-                
+
                 <!-- Card 1 -->
                 <div class="spotlight-card w-full max-w-md md:max-w-[380px] bg-[#0b1120] border border-white/10 p-8 rounded-2xl transition-all duration-700 cubic-bezier(0.25, 0.8, 0.25, 1)
                             md:absolute md:left-1/2 md:top-0
@@ -715,11 +715,11 @@
                 <h2 class="font-display font-bold text-4xl text-white mb-2 transition-all duration-700 opacity-100 translate-y-0 opacity-0 translate-y-10">Frequently asked questions</h2>
                 <p class="text-slate-400">Can’t find what you’re looking for? Reach out to our team.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <!-- FAQ 1 -->
                 <details class="group bg-white/5 rounded-2xl border border-white/5 open:bg-white/10 transition-all duration-300 [&amp;_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex cursor-pointer list-none items-center justify-between p-6 font-medium text-white focus:outline-none focus:ring-1 focus:ring-island-green rounded-2xl">
+                    <summary class="flex cursor-pointer list-none items-center justify-between p-6 font-medium text-white focus:outline-none">
                         <span>Can AI agents automate customer service workflows?</span>
                         <span class="transition-transform duration-300 group-open:rotate-180 text-slate-400">
                             <i class="bi bi-chevron-down"></i>
@@ -732,7 +732,7 @@
 
                 <!-- FAQ 2 -->
                 <details class="group bg-white/5 rounded-2xl border border-white/5 open:bg-white/10 transition-all duration-300 [&amp;_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex cursor-pointer list-none items-center justify-between p-6 font-medium text-white focus:outline-none focus:ring-1 focus:ring-island-green rounded-2xl">
+                    <summary class="flex cursor-pointer list-none items-center justify-between p-6 font-medium text-white focus:outline-none">
                         <span>How does the AI benefit real estate professionals?</span>
                         <span class="transition-transform duration-300 group-open:rotate-180 text-slate-400">
                             <i class="bi bi-chevron-down"></i>
@@ -745,7 +745,7 @@
 
                 <!-- FAQ 3 -->
                 <details class="group bg-white/5 rounded-2xl border border-white/5 open:bg-white/10 transition-all duration-300 [&amp;_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex cursor-pointer list-none items-center justify-between p-6 font-medium text-white focus:outline-none focus:ring-1 focus:ring-island-green rounded-2xl">
+                    <summary class="flex cursor-pointer list-none items-center justify-between p-6 font-medium text-white focus:outline-none">
                         <span>Are your chatbots secure for sensitive data?</span>
                         <span class="transition-transform duration-300 group-open:rotate-180 text-slate-400">
                             <i class="bi bi-chevron-down"></i>
@@ -758,7 +758,7 @@
 
                 <!-- FAQ 4 -->
                 <details class="group bg-white/5 rounded-2xl border border-white/5 open:bg-white/10 transition-all duration-300 [&amp;_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex cursor-pointer list-none items-center justify-between p-6 font-medium text-white focus:outline-none focus:ring-1 focus:ring-island-green rounded-2xl">
+                    <summary class="flex cursor-pointer list-none items-center justify-between p-6 font-medium text-white focus:outline-none">
                         <span>Can the system handle multilingual tourism bookings?</span>
                         <span class="transition-transform duration-300 group-open:rotate-180 text-slate-400">
                             <i class="bi bi-chevron-down"></i>
@@ -806,21 +806,21 @@
 <!-- Form -->
             <form class="glass-card p-8 md:p-10 rounded-3xl space-y-6 border border-metallic-gold/20 transition-all duration-700 opacity-100 translate-y-0 opacity-0 translate-y-10">
                 <h3 class="text-white font-bold text-2xl mb-2 transition-all duration-700 opacity-100 translate-y-0 opacity-0 translate-y-10">Service Request</h3>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="space-y-2">
-                        <label for="first-name" class="text-xs font-bold text-metallic-gold uppercase">First Name</label>
-                        <input type="text" id="first-name" class="w-full bg-black border border-white/10 rounded-lg p-3 text-white focus:outline-none focus:border-island-green transition-colors">
+                        <label class="text-xs font-bold text-metallic-gold uppercase">First Name</label>
+                        <input type="text" class="w-full bg-black border border-white/10 rounded-lg p-3 text-white focus:outline-none focus:border-island-green transition-colors">
                     </div>
                     <div class="space-y-2">
-                        <label for="last-name" class="text-xs font-bold text-metallic-gold uppercase">Last Name</label>
-                        <input type="text" id="last-name" class="w-full bg-black border border-white/10 rounded-lg p-3 text-white focus:outline-none focus:border-island-green transition-colors">
+                        <label class="text-xs font-bold text-metallic-gold uppercase">Last Name</label>
+                        <input type="text" class="w-full bg-black border border-white/10 rounded-lg p-3 text-white focus:outline-none focus:border-island-green transition-colors">
                     </div>
                 </div>
 
                 <div class="space-y-2">
-                    <label for="email" class="text-xs font-bold text-metallic-gold uppercase">Email Address</label>
-                    <input type="email" id="email" class="w-full bg-black border border-white/10 rounded-lg p-3 text-white focus:outline-none focus:border-island-green transition-colors">
+                    <label class="text-xs font-bold text-metallic-gold uppercase">Email Address</label>
+                    <input type="email" class="w-full bg-black border border-white/10 rounded-lg p-3 text-white focus:outline-none focus:border-island-green transition-colors">
                 </div>
 
                 <div class="space-y-2">
@@ -858,13 +858,13 @@
                 <div>
                     <h4 class="text-white font-bold mb-4">Connect</h4>
                     <div class="flex gap-4">
-                        <a href="#" aria-label="Twitter" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-slate-400 hover:bg-island-green hover:text-white transition-all"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-slate-400 hover:bg-island-green hover:text-white transition-all"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-slate-400 hover:bg-island-green hover:text-white transition-all"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-slate-400 hover:bg-island-green hover:text-white transition-all" style="cursor: default;"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-slate-400 hover:bg-island-green hover:text-white transition-all" style="cursor: default;"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-slate-400 hover:bg-island-green hover:text-white transition-all" style="cursor: default;"><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"><div class="text-slate-600 text-sm">
                     © 2024 Island Connect AI. All rights reserved.
                 </div><div class="flex gap-6 text-sm text-slate-600">
@@ -938,7 +938,7 @@
               <p style="font-weight: 700; color: #334155; margin: 0.25rem;">+1 876-463-9209</p>
               <p style="font-weight: 500; color: #334155; margin: 0.25rem;">Online</p>
             </div>
-            <button type="button" aria-label="Close chat" style="position: absolute; top: 0px; right: 0px; display: inline-flex; flex-shrink: 0; justify-content: center; align-items: center;
+            <button type="button" style="position: absolute; top: 0px; right: 0px; display: inline-flex; flex-shrink: 0; justify-content: center; align-items: center;
               font-weight: 500; transition-duration: 300ms; outline-width: 2px; outline-color: transparent; outline-offset: 0px; height: 2rem; padding-left: 0.5rem;
               padding-right: 0.5rem; border-width: 0px; cursor: pointer; background-color: transparent; color: #334155;">
               <span style="padding-left: 0.25rem; padding-right: 0.25rem; font-size: 0.875rem; line-height: 1.25rem;">
@@ -975,7 +975,7 @@
               Whatsapp</span>
           </button>
         </div>
-        <button id="ig-chat-button" type="button" aria-label="Open WhatsApp chat" style="border-radius: 9999px; display: inline-flex; flex-shrink: 0; justify-content: center; align-items: center; font-weight: 500;
+        <button id="ig-chat-button" type="button" style="border-radius: 9999px; display: inline-flex; flex-shrink: 0; justify-content: center; align-items: center; font-weight: 500;
           transition-duration: 300ms; outline-width: 2px; outline-color: transparent; outline-offset: 0px; height: 3rem; padding-left: 0.75rem; padding-right: 0.75rem; cursor: pointer;
           background-color: #ffffff; color: #4b5563; transform: translateY(0%); border: 1px solid #E3E5F5;" onclick="const el = document.getElementById('ig-chat-container');
                       if (el) {
