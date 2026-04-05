@@ -47,6 +47,7 @@
             </a><div class="flex items-center gap-8">
                 <a href="#services" class="text-sm font-medium hover:text-white transition-colors" style="cursor: default;">Solutions</a>
                 <a href="#projects" class="text-sm font-medium hover:text-white transition-colors" style="cursor: default;">Projects</a>
+                <a href="#blog" class="text-sm font-medium hover:text-white transition-colors" style="cursor: default;">Blog</a>
                 <a href="#security" class="text-sm font-medium hover:text-white transition-colors" style="cursor: default;">Security</a>
                 <a href="#contact" class="relative inline-flex h-10 overflow-hidden rounded-full p-[2px] group shadow-[0_0_20px_rgba(0,119,68,0.4)] hover:shadow-[0_0_30px_rgba(255,215,0,0.5)] transition-shadow duration-300" style="cursor: default;">
                     <span class="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#007744_0%,#FFD700_50%,#007744_100%)]"></span>
@@ -77,6 +78,9 @@
             <a href="#projects" class="flex flex-col items-center gap-1 text-xs text-slate-400 hover:text-white" style="cursor: default;">
                 <i class="bi bi-collection-play text-xl"></i>
                 <span>Work</span>
+            </a>            <a href="#blog" class="flex flex-col items-center gap-1 text-xs text-slate-400 hover:text-white" style="cursor: default;">
+                <i class="bi bi-journal-text text-xl"></i>
+                <span>Blog</span>
             </a>
             <a href="#contact" class="flex flex-col items-center gap-1 text-xs text-slate-400 hover:text-white" style="cursor: default;">
                 <i class="bi bi-person-circle text-xl"></i>
@@ -705,6 +709,225 @@
                     card.style.borderColor = 'rgba(255,255,255,0.1)';
                 });
             });
+        </script>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-24 relative overflow-hidden bg-obsidian border-t border-white/5">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-island-green/10 rounded-full blur-[120px] animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-metallic-gold/10 rounded-full blur-[100px] animate-float"></div>
+            <!-- Particle Canvas -->
+            <canvas id="blog-particles" class="absolute inset-0 opacity-50 w-full h-full"></canvas>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-island-green/30 bg-island-green/5 text-island-green text-xs font-bold uppercase tracking-wider mb-4">
+                    Latest Insights
+                </div>
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">Explore the AI <span class="text-transparent bg-clip-text bg-gradient-to-r from-island-green to-metallic-gold">Revolution</span></h2>
+                <p class="text-white/70 max-w-2xl mx-auto text-lg leading-relaxed">Discover how Island Connect AI is transforming the Jamaican landscape through intelligent automation and smart digital solutions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="group relative bg-obsidian-light/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/5 hover:border-island-green/50 transition-all duration-500 flex flex-col hover:shadow-[0_0_30px_-10px_rgba(0,119,68,0.3)]">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=1200&q=80" alt="Innovative Smart Tourism Strategies" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 rounded-full bg-island-green/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest">Tourism</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <div class="flex items-center gap-3 text-white/40 text-xs mb-4">
+                            <span>April 12, 2024</span>
+                            <span class="w-1 h-1 rounded-full bg-white/20"></span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-white mb-4 group-hover:text-island-green transition-colors leading-tight">Innovative Smart Tourism Strategies in Jamaica</h3>
+                        <p class="text-white/60 text-sm mb-8 flex-grow leading-relaxed">Explore Jamaica's future with innovative smart tourism strategies. Learn how AI, digital transformation, and sustainable practices are reshaping travel.</p>
+                        <a href="https://blog-islandconnect.pages.dev/blog-post-innovative-tourism-strategies.html" target="_blank" class="inline-flex items-center gap-2 text-metallic-gold font-bold hover:text-white transition-colors group/link">
+                            Read Article <i class="bi bi-arrow-right group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="group relative bg-obsidian-light/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/5 hover:border-island-green/50 transition-all duration-500 flex flex-col hover:shadow-[0_0_30px_-10px_rgba(0,119,68,0.3)]">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80" alt="AI-Powered Property Matching" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 rounded-full bg-island-green/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest">Real Estate</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <div class="flex items-center gap-3 text-white/40 text-xs mb-4">
+                            <span>March 22, 2024</span>
+                            <span class="w-1 h-1 rounded-full bg-white/20"></span>
+                            <span>4 min read</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-white mb-4 group-hover:text-island-green transition-colors leading-tight">AI-Powered Property Matching in Jamaica</h3>
+                        <p class="text-white/60 text-sm mb-8 flex-grow leading-relaxed">Discover how our AI agents are revolutionizing property searches across Montego Bay, Kingston, and Ocho Rios with intelligent matching.</p>
+                        <a href="https://blog-islandconnect.pages.dev/blog-post-ai-property-matching.html" target="_blank" class="inline-flex items-center gap-2 text-metallic-gold font-bold hover:text-white transition-colors group/link">
+                            Read Article <i class="bi bi-arrow-right group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="group relative bg-obsidian-light/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/5 hover:border-island-green/50 transition-all duration-500 flex flex-col hover:shadow-[0_0_30px_-10px_rgba(0,119,68,0.3)]">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=1200&q=80" alt="Smart Tourism in Jamaica" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 rounded-full bg-island-green/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest">Tourism</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <div class="flex items-center gap-3 text-white/40 text-xs mb-4">
+                            <span>March 20, 2024</span>
+                            <span class="w-1 h-1 rounded-full bg-white/20"></span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-white mb-4 group-hover:text-island-green transition-colors leading-tight">Smart Tourism in Jamaica: The Future is Here</h3>
+                        <p class="text-white/60 text-sm mb-8 flex-grow leading-relaxed">From Negril's beaches to Dunn's River Falls, see how AI is creating personalized experiences for visitors and locals alike.</p>
+                        <a href="https://blog-islandconnect.pages.dev/blog-post-smart-tourism.html" target="_blank" class="inline-flex items-center gap-2 text-metallic-gold font-bold hover:text-white transition-colors group/link">
+                            Read Article <i class="bi bi-arrow-right group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="group relative bg-obsidian-light/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/5 hover:border-island-green/50 transition-all duration-500 flex flex-col hover:shadow-[0_0_30px_-10px_rgba(0,119,68,0.3)]">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://sspark.genspark.ai/cfimages?u1=v0ia9eh0iAYQCzb67b0H1/8LKLdAmkvOx0+AcoHNfuzqlczjE5GAETG4ynhcib8Dtx12hyogU9ijI8Ck5cpkjqVqg+Ba4XJ5Pn4d9Wa4F9SQCjYyGrUop2Ew7juyCBdsRyKFbUXJbWZEMMmzwWRlvyXD5KfQ5x6Kz7B8O2M=&u2=+iC3TDDpG3T+3Rbp&width=2560" alt="Jamaican AI Revolution" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 rounded-full bg-island-green/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest">Technology</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <div class="flex items-center gap-3 text-white/40 text-xs mb-4">
+                            <span>March 18, 2024</span>
+                            <span class="w-1 h-1 rounded-full bg-white/20"></span>
+                            <span>7 min read</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-white mb-4 group-hover:text-island-green transition-colors leading-tight">Leading the Caribbean AI Revolution from Kingston</h3>
+                        <p class="text-white/60 text-sm mb-8 flex-grow leading-relaxed">How Kingston's tech scene is pioneering smart websites and intelligent automation for the entire region.</p>
+                        <a href="https://blog-islandconnect.pages.dev/blog-post-ai-revolution.html" target="_blank" class="inline-flex items-center gap-2 text-metallic-gold font-bold hover:text-white transition-colors group/link">
+                            Read Article <i class="bi bi-arrow-right group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="group relative bg-obsidian-light/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/5 hover:border-island-green/50 transition-all duration-500 flex flex-col hover:shadow-[0_0_30px_-10px_rgba(0,119,68,0.3)]">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="Luxury Property AI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 rounded-full bg-island-green/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest">Luxury</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <div class="flex items-center gap-3 text-white/40 text-xs mb-4">
+                            <span>March 15, 2024</span>
+                            <span class="w-1 h-1 rounded-full bg-white/20"></span>
+                            <span>4 min read</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-white mb-4 group-hover:text-island-green transition-colors leading-tight">Elevating Luxury Real Estate with AI Agents</h3>
+                        <p class="text-white/60 text-sm mb-8 flex-grow leading-relaxed">Explore how AI is transforming luxury property sales in exclusive areas like Tryall Club and Round Hill.</p>
+                        <a href="https://blog-islandconnect.pages.dev/blog-post-luxury-properties.html" target="_blank" class="inline-flex items-center gap-2 text-metallic-gold font-bold hover:text-white transition-colors group/link">
+                            Read Article <i class="bi bi-arrow-right group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="group relative bg-obsidian-light/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/5 hover:border-island-green/50 transition-all duration-500 flex flex-col hover:shadow-[0_0_30px_-10px_rgba(0,119,68,0.3)]">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80" alt="Jamaican Tourism Recovery" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 rounded-full bg-island-green/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest">Recovery</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <div class="flex items-center gap-3 text-white/40 text-xs mb-4">
+                            <span>March 12, 2024</span>
+                            <span class="w-1 h-1 rounded-full bg-white/20"></span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-white mb-4 group-hover:text-island-green transition-colors leading-tight">Accelerating Tourism Recovery with Smart Tech</h3>
+                        <p class="text-white/60 text-sm mb-8 flex-grow leading-relaxed">How AI helped Jamaica's tourism industry recover and exceed pre-pandemic levels with intelligent booking systems.</p>
+                        <a href="https://blog-islandconnect.pages.dev/blog-post-tourism-recovery.html" target="_blank" class="inline-flex items-center gap-2 text-metallic-gold font-bold hover:text-white transition-colors group/link">
+                            Read Article <i class="bi bi-arrow-right group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="mt-20 text-center">
+                <a href="https://blog-islandconnect.pages.dev/" target="_blank" class="inline-flex items-center gap-3 px-10 py-5 rounded-full border border-metallic-gold/50 bg-metallic-gold/5 text-metallic-gold font-bold text-lg hover:bg-metallic-gold/20 hover:border-metallic-gold hover:text-white transition-all group shadow-[0_0_20px_rgba(212,175,55,0.1)] hover:shadow-[0_0_30px_rgba(212,175,55,0.3)]">
+                    Visit Full Blog Archive <i class="bi bi-box-arrow-up-right group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Particle Animation Script -->
+        <script>
+            (function() {
+                const canvas = document.getElementById('blog-particles');
+                if (!canvas) return;
+                const ctx = canvas.getContext('2d');
+                let particles = [];
+
+                function init() {
+                    canvas.width = canvas.parentElement.offsetWidth;
+                    canvas.height = canvas.parentElement.offsetHeight;
+                    particles = [];
+                    for (let i = 0; i < 60; i++) {
+                        particles.push({
+                            x: Math.random() * canvas.width,
+                            y: Math.random() * canvas.height,
+                            size: Math.random() * 2 + 0.5,
+                            speedX: (Math.random() - 0.5) * 0.4,
+                            speedY: (Math.random() - 0.5) * 0.4,
+                            color: Math.random() > 0.6 ? '#007744' : '#D4AF37',
+                            opacity: Math.random() * 0.4 + 0.1
+                        });
+                    }
+                }
+
+                function animate() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    particles.forEach(p => {
+                        p.x += p.speedX;
+                        p.y += p.speedY;
+
+                        if (p.x < 0) p.x = canvas.width;
+                        if (p.x > canvas.width) p.x = 0;
+                        if (p.y < 0) p.y = canvas.height;
+                        if (p.y > canvas.height) p.y = 0;
+
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                        ctx.fillStyle = p.color;
+                        ctx.globalAlpha = p.opacity;
+                        ctx.fill();
+
+                        if (p.size > 2) {
+                            ctx.shadowBlur = 15;
+                            ctx.shadowColor = p.color;
+                        } else {
+                            ctx.shadowBlur = 0;
+                        }
+                    });
+                    requestAnimationFrame(animate);
+                }
+
+                window.addEventListener('resize', init);
+                init();
+                animate();
+            })();
         </script>
     </section>
 
